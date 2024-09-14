@@ -1,0 +1,950 @@
+@charset "utf-8";
+
+
+
+
+@media screen and (min-width : 1025px) {
+
+    
+    .sect {
+        width : 100%;
+        position : relative;
+
+    }
+    
+    /* sect01 시작 */
+    .sect01 {
+        height : 95vh;
+    }
+    
+    /* 배경 ul 태그 */
+    .sect01-intro_wrap {
+        display : flex;
+        
+        justify-content: space-between;
+               
+    }
+
+    /* 배경 li 태그 */
+    .intro_wrap-list_box {
+       
+        width : 35%;
+
+        aspect-ratio : 4 / 3;
+
+        position : relative;
+
+    }
+
+    /* 배경 이미지 태그 */
+    .intro_img_1 {
+    
+        width : 100%;
+        height : 100%;
+        
+    
+        position : absolute;
+        left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%);
+    }
+    
+    .intro_img_2 {
+    
+        width : 45%;
+        height : 35%;
+    
+        position : absolute;
+        left : 75%;
+        top : 10%;
+    
+        
+    }
+    
+    .intro_img_3 {
+
+        width : 100%;    
+        height : 100%;
+    
+        position : absolute;
+        left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%);
+    }
+
+
+    /* 인트로 텍스트 h1 태그 */
+    .sect01-intro_text{
+
+        text-align : center;
+
+        width : 100%;
+
+        position : absolute;
+        left : 0;
+        top : 64%;
+        font-size : 4vh;
+    }
+
+    .click {
+
+        position: absolute;
+
+        left : 50%;
+        bottom : 6vh;
+        transform : translateX(-50%);
+    
+        /* 요소의 성질과 크기 정의 */
+        display : block;
+        width : 12vh;
+        height : 12vh;
+    
+        /* 내부 글자를 박스에 알맞게 조정 */
+        line-height : 12vh;
+        text-align : center;
+    
+        /* 박스의 테두리를 조정 */
+        border-radius : 50%;
+        border : 2px solid #000;
+    
+    
+        font-size: 3.8vh;
+        cursor: pointer;
+        color: black;
+        font-weight: normal;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+    
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+
+    .arrow {
+        display: block;
+        text-align: center;
+        width: 0;
+        height: 0;
+        border-left: 1.8vh solid transparent;
+        border-right: 1.8vh solid transparent;
+        border-top: 2.4vh solid black;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+        margin: 0 auto;
+        /* margin-bottom: 40px; */
+
+
+        position : absolute;
+
+        left : 50%;
+        bottom : 2vh;
+        transform : translateX(-50%);
+
+    }
+
+    /* sect01 끝 */
+
+    /* sect02 시작 */
+    .sect02{
+        width : 100%;
+        height : 100vh;
+
+    }
+
+    .sect02-bg {
+        background-image : url('../image/night\ \(5\).jpg');
+        background-size : 100% auto;
+        background-repeat: no-repeat;
+        width : 100%;
+        height : 100%;
+
+        position : absolute;
+        left : 0;
+        top : 0;
+        z-index: -1;
+    }
+
+    .sect02-title {
+        padding-top : 24vh;
+        text-align: center;
+
+        color : #cacded;
+        font-size : 4vh;
+        
+    }
+
+    .sect02-nav_wrap {
+        width : 18%;
+        padding : 12vh 0 0 80vw;
+                        
+    }
+
+    .sect02-nav_box{
+        margin-bottom: 6vh;
+        
+    }
+
+    .sect02-btn{
+        display : block;
+        color : #cacded;
+        font-size: 2.5vh;
+        line-height: 5.4vh;
+        border : 2px solid #cacded;
+
+        width : 14vh;
+        text-align: center;
+        border-radius : 2vh;
+        cursor: pointer;
+
+       
+    }
+
+    .sect02-btn:hover {
+        color: blue;
+        font-weight: bold;
+
+    }
+
+    .shake{
+        animation : shake 2s ;
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(10px);
+        }
+    }
+
+    /* sect02 끝 */
+
+    /* sect03 시작 */
+
+    .sect03-mnu_wrap {
+        padding-top : 4vh;
+
+        display: flex;
+
+        margin-bottom: 4vh;
+
+    }
+    .sect03-content_title {
+        width : 20%;
+        text-align: center;
+        /* font-size: 4vh; */
+
+        
+        /* box-sizing : border-box; */
+        /* padding : 4vh 0 0 5vh; */
+
+        font-size : 3.5vh;
+
+    }
+
+    .sect03-content_wrap {
+
+        width : 80%;
+
+        padding-right : 14vw;
+        
+        font-size : 2vh;
+        line-height: 1.7;
+    
+    }
+
+
+    .sect03-content_box{
+
+        padding-top : 4vh;
+
+
+    }
+
+    .content-list_title{
+        font-size: 2.8vh;
+        margin-bottom: 2vh;
+    }
+
+    .content_txt{
+        font-size: 2vh;
+        line-height: 1.75;
+
+    }
+
+
+    .story_img {
+        width : 100%;
+
+        padding-top : 5vh;
+        /* padding : 4vh 0 4vh 0; */
+        /* width : 70vw; */
+        /* height : 70vh; */
+        
+    }
+
+    .value_img {
+        position : relative;
+        
+        padding-top : 10vh;
+        width: 35vw;
+    }
+
+    /* sect03 끝 */
+    }
+
+
+
+@media screen and (max-width : 1024px) and (min-width : 769px) {
+
+    
+    .sect {
+        width : 100%;
+        position : relative;
+
+    }
+    
+    /* sect01 시작 */
+    .sect01 {
+        height : 95vh;
+
+    }
+    
+    /* 배경 ul 태그 */
+    .sect01-intro_wrap {
+        display : flex;
+        
+        justify-content: space-between;
+               
+    }
+
+    /* 배경 li 태그 */
+    .intro_wrap-list_box {
+       
+        width : 45%;
+
+        aspect-ratio : 4 / 3;
+
+        position : relative;
+
+    }
+
+    /* 배경 이미지 태그 */
+    .intro_img_1 {
+    
+        width : 100%;
+        height : 100%;
+        
+    
+        position : absolute;
+        left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%);
+    }
+    
+    .intro_img_2 {
+    
+        width : 45%;
+        height : 35%;
+    
+        position : absolute;
+        left : 75%;
+        top : 10%;
+    
+        
+    }
+    
+    .intro_img_3 {
+
+        width : 100%;    
+        height : 100%;
+    
+        position : absolute;
+        left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%);
+    }
+
+
+    /* 인트로 텍스트 h1 태그 */
+    .sect01-intro_text{
+
+        position: absolute;
+
+        
+        bottom : 150px;
+        
+        text-align: center;
+        
+        width : 100%;
+
+                        
+        font-size : 36px;
+    }
+
+    .click {
+
+        position: absolute;
+
+        left : 50%;
+        bottom : 20px;
+        transform : translateX(-50%);
+    
+        /* 요소의 성질과 크기 정의 */
+        display : block;
+        width : 80px;
+        height : 80px;
+
+        margin : 0 auto;
+            
+        /* 내부 글자를 박스에 알맞게 조정 */
+        line-height : 80px;
+        text-align : center;
+    
+        /* 박스의 테두리를 조정 */
+        border-radius : 50%;
+        border : 2px solid #000;
+    
+    
+        font-size: 28px;
+        cursor: pointer;
+        color: black;
+        font-weight: normal;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+    
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+
+
+    .arrow {
+        display: block;
+        text-align: center;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 16px solid black;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+        margin: 0 auto;
+        /* margin-bottom: 40px; */
+
+
+        position : absolute;
+
+        left : 50%;
+        bottom : 0;
+        transform : translateX(-50%);
+
+    }
+
+    /* sect01 끝 */
+
+    /* sect02 시작 */
+    .sect02{
+        width : 100%;
+        
+        aspect-ratio : 16 / 9;
+
+        position : relative;
+
+    }
+
+    .sect02-bg {
+        background-image : url('../image/night\ \(5\).jpg');
+        background-size : 100% auto;
+        background-repeat: no-repeat;
+        width : 100%;
+        height : 100%;
+
+        position : absolute;
+        left : 0;
+        top : 0;
+        z-index: -1;
+    }
+
+    .sect02-title {
+        padding-top : 50px;
+        text-align: center;
+
+        color : #cacded;
+        font-size : 28px;
+        
+    }
+
+    .sect02-nav_wrap {
+        width : 60%;
+
+        display : flex;
+
+        justify-content: space-between;
+
+
+        position : absolute;
+        left : 50%;
+        bottom : 32px;
+
+        transform : translateX(-50%);
+    }
+
+    .sect02-nav_box{
+        width : calc( (100% / 3) - 28px );
+    }
+
+    .sect02-btn{
+        display : block;
+        color : #cacded;
+        font-size: 24px;
+        line-height: 40px;
+        border : 2px solid #cacded;
+
+        width : 100%;
+
+        text-align: center;
+        border-radius : 10px;
+        cursor: pointer;
+    }
+
+    .sect02-btn:hover {
+        color: blue;
+        font-weight: bold;
+
+    }
+
+    .shake{
+        animation : shake 2s ;
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(10px);
+        }
+    }
+
+    /* sect02 끝 */
+
+    /* sect03 시작 */
+
+    .sect03-mnu_wrap {
+        padding-top : 40px;
+
+        display: flex;
+
+        margin-bottom: 40px;
+
+    }
+    .sect03-content_title {
+        width : 20%;
+        text-align: center;
+        /* font-size: 4vh; */
+
+        
+        /* box-sizing : border-box; */
+        /* padding : 4vh 0 0 5vh; */
+
+        font-size : 28px;
+
+    }
+
+    .sect03-content_wrap {
+
+        width : 80%;
+
+        padding-right : 40px;
+        
+        font-size : 18px;
+        line-height: 1.7;
+    
+    }
+
+
+    .sect03-content_box{
+
+        padding-top : 40px;
+
+
+    }
+
+    .content-list_title{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .content_txt{
+        font-size: 19px;
+        line-height: 1.75;
+
+    }
+
+
+    .story_img {
+        width : 100%;
+
+        padding-top : 50px;
+        /* padding : 4vh 0 4vh 0; */
+        /* width : 70vw; */
+        /* height : 70vh; */
+        
+    }
+
+    .value_img {
+        position : relative;
+        
+        padding-top : 100px;
+        width: 60%;
+    }
+
+    /* sect03 끝 */
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .sect {
+        width : 100%;
+        position : relative;
+
+    }
+    
+    /* sect01 시작 */
+    .sect01 {
+        height : 700px;
+
+    }
+    
+    /* 배경 ul 태그 */
+    .sect01-intro_wrap {
+        display : block;
+        
+        /* justify-content: space-between; */
+               
+    }
+
+    /* 배경 li 태그 */
+    .intro_wrap-list_box {
+       
+        width : 100%;
+
+        /* aspect-ratio : 4 / 3; */
+
+        /* position : relative; */
+
+    }
+
+    .intro_wrap-list_box {
+        opacity: 0;
+        transition: opacity 1s ease;
+        position: absolute; /* 필요에 따라 위치를 고정 */
+      }
+      
+      .intro_wrap-list_box.active {
+        opacity: 1;
+      }
+
+    /* 배경 이미지 태그 */
+    .intro_img_1 {
+    
+        width : 100vw;
+        height : 55vh;
+        
+    
+        position : absolute;
+        /* left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%); */
+    }
+    
+    .intro_img_2 {
+    
+        width : 40vw;
+        height : 15vh;
+    
+        position : absolute;
+        left : 60vw;
+        top : 45vh;
+    
+        
+    }
+    
+    .intro_img_3 {
+
+        width : 100vw;    
+        height : 60vh;
+    
+        position : absolute;
+        /* left : 50%;
+        top : 50%;
+    
+        transform : translate(-50%, -50%); */
+    }
+
+
+    /* 인트로 텍스트 h1 태그 */
+    .sect01-intro_text{
+
+        position: absolute;
+
+        
+        bottom : 110px;
+        
+        text-align: center;
+        
+        width : 100vw;
+
+                        
+        font-size : 20px;
+    }
+
+    .click {
+
+        position: absolute;
+
+        left : 50%;
+        bottom : 40px;
+        transform : translateX(-50%);
+    
+        /* 요소의 성질과 크기 정의 */
+        display : block;
+        width : 60px;
+        height : 60px;
+
+        margin : 0 auto;
+            
+        /* 내부 글자를 박스에 알맞게 조정 */
+        line-height : 55px;
+        text-align : center;
+    
+        /* 박스의 테두리를 조정 */
+        border-radius : 50%;
+        border : 2px solid #000;
+    
+    
+        font-size: 22px;
+        cursor: pointer;
+        color: black;
+        font-weight: normal;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+    
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+
+
+    .arrow {
+        display: block;
+        text-align: center;
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 16px solid black;
+        animation: blink 2s;
+        animation-iteration-count: 2;
+        margin: 0 auto;
+        /* margin-bottom: 40px; */
+
+
+        position : absolute;
+
+        left : 50%;
+        bottom : 20px;
+        transform : translateX(-50%);
+
+    }
+
+    /* sect01 끝 */
+
+    /* sect02 시작 */
+    .sect02{
+        width : 100%;
+        
+        aspect-ratio : 4 / 3;
+
+        position : relative;
+
+    }
+
+    .sect02-bg {
+        background-image : url('../image/night\ \(5\).jpg');
+        background-size : 100vw 50vh;
+        background-repeat: no-repeat;
+        width : 100%;
+        height : 100%;
+
+        position : absolute;
+        left : 0;
+        top : 0;
+        z-index: -1;
+    }
+
+    .sect02-title {
+        padding-top : 18px;
+        text-align: center;
+
+        color : #cacded;
+        font-size : 19px;
+        
+    }
+
+    .sect02-nav_wrap {
+        width : 60%;
+
+        display : flex;
+
+        justify-content: space-between;
+
+
+        position : absolute;
+        left : 50%;
+        bottom : 32px;
+
+        transform : translateX(-50%);
+    }
+
+    .sect02-nav_box{
+        width : calc( (100% / 3) - 5px);
+    }
+
+    .sect02-btn{
+        display : block;
+        color : #cacded;
+        font-size: 17px;
+        line-height: 30px;
+        /* border : 2px solid #cacded;
+
+        
+
+        text-align: center;
+        border-radius : 10px; */
+        cursor: pointer;
+    }
+
+    .sect02-btn:hover {
+        color: blue;
+        font-weight: bold;
+
+    }
+
+    .shake{
+        animation : shake 2s ;
+    }
+
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(10px);
+        }
+    }
+
+    /* sect02 끝 */
+
+    /* sect03 시작 */
+
+    .sect03-mnu_wrap {
+        padding-top : 40px;
+        
+        /* display: flex; */
+
+        /* margin-bottom: 10px; */
+
+    }
+    .sect03-content_title {
+        width : 20%;
+        text-align: center;
+        /* font-size: 4vh; */
+
+        
+        /* box-sizing : border-box; */
+        /* padding : 4vh 0 0 5vh; */
+
+        font-size : 26px;
+
+    }
+
+    .sect03-content_wrap {
+
+        width : 100%;
+
+        padding-right : 10px;
+        
+        font-size : 18px;
+        line-height: 1.7;
+    
+    }
+
+
+    .sect03-content_box{
+
+        padding-top : 20px;
+
+
+    }
+
+    .content-list_title{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .content_txt{
+        font-size: 18px;
+        line-height: 1.75;
+
+    }
+
+
+    .story_img {
+        width : 100%;
+        height : 40vh;
+
+        padding-top : 50px;
+        /* padding : 4vh 0 4vh 0; */
+        /* width : 70vw; */
+        /* height : 70vh; */
+        
+    }
+
+    .value_img {
+        position : relative;
+        
+        padding-top : 100px;
+        width: 100%;
+    }
+
+    /* sect03 끝 */
+
+}
